@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .flex-cont{
+            display: flex;
+            flex-flow:wrap row;
+            justify-content:center;
+            background: orange;
+           align-items: center;
+            height: 300px;
+           
+        }
+        .flex-cont div{
+            width: 9%;
+            text-align: center;
+            color: rgb(0, 35, 118);
+            font-size: 25px;
+            padding: 10px;
+            margin: 10px;
+            background: pink;
+            text-shadow: 3px 2px 5px red;
+            box-shadow: 2px 2px black;
+        }
+        .flex-cont div:hover{
+            box-shadow: 3px 4px white;
+           text-shadow: 3px 4px 5px rgb(2, 126, 70);
+        }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: start;
+            background-color: rgb(121, 215, 255);
+            padding: 20px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 300px;
+           
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 2px 4px 4px black;
+        }
+        .card:hover{
+            box-shadow: 2px 4px 4px rgb(0, 99, 220);
+            width: 305px;
+        }
+        .img-style{
+            width: 100%;
+        }
+        .card-body{
+            background-color: rgb(13, 12, 21);
+            padding: 5px;
+        }
+        .card-title{
+            color: white;
+font-size: 1.5rem;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif ;}
+.card-des{
+    color: white;
+    margin: 10px;
+    text-align: justify;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="flex-cont">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+        <div class="div4">div 4</div>
+        <div class="div5">div 5</div>
+        <div class="div6">div 6</div>
+        <div class="div7">div 7</div>
+        <div class="div8">div 8</div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/297246290_1651671381893073_7820745086429611350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IraIZweyMVYAX_KOh_h&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCI6HM235m0_GMKdKFGK-5qnbJmuufCyaZsGLptd3MnsQ&oe=63A0EF42" alt="profile_pic" class="img-style">
+      <div class="card-body">
+        <div class="card-title">Asif Iqbal</div>
+        <div class="card-des">Web Developer from 2023 <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed veritatis commodi soluta. Nobis quidem eligendi autem, maxime, cum ut eius veniam distinctio quas dignissimos adipisci, aliquid deleniti odit id.
+        </div>
+      </div>
+        </div>
+        <div class="card">
+            <img src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/297246290_1651671381893073_7820745086429611350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IraIZweyMVYAX_KOh_h&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCI6HM235m0_GMKdKFGK-5qnbJmuufCyaZsGLptd3MnsQ&oe=63A0EF42" alt="profile_pic" class="img-style">
+      <div class="card-body">
+        <div class="card-title">Asif Iqbal</div>
+        <div class="card-des">Compitative Programmer from 2023 <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed veritatis commodi soluta. Nobis quidem eligendi autem, maxime, cum ut eius veniam distinctio quas dignissimos adipisci, aliquid deleniti odit id.
+        </div>
+      </div>
+        </div>
+        <div class="card">
+            <img src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/297246290_1651671381893073_7820745086429611350_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IraIZweyMVYAX_KOh_h&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCI6HM235m0_GMKdKFGK-5qnbJmuufCyaZsGLptd3MnsQ&oe=63A0EF42" alt="profile_pic" class="img-style">
+      <div class="card-body">
+        <div class="card-title">Asif Iqbal</div>
+        <div class="card-des">Algoredom Expert from 2023 <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed veritatis commodi soluta. Nobis quidem eligendi autem, maxime, cum ut eius veniam distinctio quas dignissimos adipisci, aliquid deleniti odit id.
+        </div>
+      </div>
+        </div>
+    </div>
+    
+</body>
+</html> 
